@@ -1,0 +1,8 @@
+{
+  "name": "praia-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "b7aff51a"
+}
