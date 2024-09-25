@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['tab4.page.scss']
 })
 export class Tab4Page {
-
+seletor = 'config';
   constructor() {}
 
 }

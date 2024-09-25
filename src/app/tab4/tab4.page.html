@@ -1,12 +1,32 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Favoritas
+      Configurações/Usuário
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+<ion-segment [(ngModel)]="seletor">
+  <ion-segment-button value="config">
+    <ion-label> Configurações</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="user">
+    <ion-label>Usuário</ion-label>
+  </ion-segment-button>
+</ion-segment>
 
-  <app-explore-container name="Tab 4 page"></app-explore-container>
+<div *ngIf="seletor == 'config'"><h3> Configurações</h3>
+<p><ion-toggle> Tema</ion-toggle></p>
+</div>
+<div *ngIf="seletor == 'user'"><h3> Usuários</h3>
+<ion-item>
+  <ion-input label="Email" placeholder="Digite seu Email:"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-input label="Senha" placeholder="Digite sua Senha:"></ion-input>
+</ion-item>
+<ion-button expand="Login"> Login </ion-button>
+</div>
+
 </ion-content>
