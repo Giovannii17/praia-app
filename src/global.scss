@@ -35,3 +35,19 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+ion-tab-bar{
+    --background:none;
+    background-color: #007aff;
+    color:white;
+    font-weight: bold;
+}
+ion-toolbar{
+    --background: none;
+    background-color: #007aff;
+    color: white;
+    font-weight:bold;
+}
+ion-tab-button{
+    color:white;
+}
