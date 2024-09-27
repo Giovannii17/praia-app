@@ -24,6 +24,18 @@ const routes: Routes = [
         loadChildren: () => import('../tab4/tab4.module').then(m => m.Tab4PageModule)
       },
       {
+        path: 'una',
+        loadChildren: () => import('../una/una.module').then(m => m.UnaPageModule)
+      },
+      {
+        path: 'campeche',
+        loadChildren: () => import('../campeche/campeche.module').then(m => m.CampechePageModule)
+      },
+      {
+        path: 'dentista',
+        loadChildren: () => import('../dentista/dentista.module').then(m => m.DentistaPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'

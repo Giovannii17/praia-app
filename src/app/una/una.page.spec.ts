@@ -3,19 +3,19 @@ import { IonicModule } from '@ionic/angular';
 
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { unaPage } from './una.page';
+import { UnaPage } from './una.page';
 
 describe('unaPage', () => {
-  let component: unaPage;
-  let fixture: ComponentFixture<unaPage>;
+  let component: UnaPage;
+  let fixture: ComponentFixture<UnaPage>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [unaPage],
+      declarations: [UnaPage],
       imports: [IonicModule.forRoot(), ExploreContainerComponentModule]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(unaPage);
+    fixture = TestBed.createComponent(UnaPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

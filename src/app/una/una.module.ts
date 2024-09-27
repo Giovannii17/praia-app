@@ -2,10 +2,10 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { unaPage } from './una.page';
+import { UnaPage } from './una.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { unaPageRoutingModule } from './una-routing.module';
+import { UnaPageRoutingModule } from './una-routing.module';
 
 @NgModule({
   imports: [
@@ -13,8 +13,8 @@ import { unaPageRoutingModule } from './una-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    unaPageRoutingModule
+    UnaPageRoutingModule
   ],
-  declarations: [unaPage]
+  declarations: [UnaPage]
 })
-export class unaPageModule {}
+export class UnaPageModule {}

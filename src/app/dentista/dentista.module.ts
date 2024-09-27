@@ -2,10 +2,10 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { dentistaPage } from './dentista.page';
+import { DentistaPage } from './dentista.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { dentistaPageRoutingModule } from './dentista-routing.module';
+import { DentistaPageRoutingModule } from './dentista-routing.module';
 
 @NgModule({
   imports: [
@@ -13,8 +13,8 @@ import { dentistaPageRoutingModule } from './dentista-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    dentistaPageRoutingModule
+    DentistaPageRoutingModule
   ],
-  declarations: [dentistaPage]
+  declarations: [DentistaPage]
 })
-export class dentistaPageModule {}
+export class DentistaPageModule {}
